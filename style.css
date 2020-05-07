@@ -1,0 +1,53 @@
+/* needed? */
+*{
+  box-sizing: border-box;
+}
+ .nav-header-main{
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+.nav-header-main a {
+  list-style: none;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav-header-main a:hover {
+  background-color: #d9d9d9;
+}
+.nav-header-main ul{
+  list-style: none;
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  display: inline-block;
+  float: left;
+}
+.nav-header-main ul li {
+  float: left;
+}
+
+.nav-header-main .header-login {
+  float: right;
+}
+
+.logout-submit{
+
+}
+
+/* listbox lol */
+.contact-left{
+  width: 30%;
+}
+.contact-left ul li {
+  border: 2px solid black;
+  display: block;
+  padding: 5px 30px 5px 10px;
+  list-style-type: none;
+
+}
