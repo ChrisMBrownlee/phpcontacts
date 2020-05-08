@@ -17,21 +17,22 @@ else
   mysqli_stmt_execute($stmt);
   $result = mysqli_stmt_get_result($stmt);
 
+  //echo "<html>"
+  //echo "<body>"
 
   while($row = mysqli_fetch_assoc($result)) {
-    echo "<html>"
-    echo "<body>"
-    echo "<input type="button">" . $row[contactsFirst] . " " . $row[contactsLast] . "</input>"
-    echo "</body>"
-    echo "</html>"
-    //array_push($source, $row['contactsId']);
-    //array_push($source, $row['contactsFirst']);
-    //array_push($source, $row['contactsLast']);
-    //array_push($source, $row['contactsAddress']);
-    //array_push($source, $row['contactsNumber']);
-    //array_push($source, $row['contactsPhoto']);
-    //array_push($final, $source);
-    //$source = array();
+   
+    //echo "<input type="button">" . $row[contactsFirst] . " " . $row[contactsLast] . "</input>"
+    //echo "</body>"
+    //echo "</html>"
+    array_push($source, $row['contactsId']);
+    array_push($source, $row['contactsFirst']);
+    array_push($source, $row['contactsLast']);
+    array_push($source, $row['contactsAddress']);
+    array_push($source, $row['contactsNumber']);
+    array_push($source, $row['contactsPhoto']);
+    array_push($final, $source);
+    $source = array();
   }
 
   // Print source string
