@@ -45,9 +45,13 @@
   width: 30%;
 }
 .contact-left ul li {
-  border: 2px solid black;
+  border: 1px solid black;
   display: block;
   padding: 5px 30px 5px 10px;
   list-style-type: none;
 
+}
+
+.form-signup {
+  
 }

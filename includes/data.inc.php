@@ -1,7 +1,7 @@
 <?php
 require 'dbh.inc.php';
 // SQL Query
-$sql = 'SELECT * FROM Contacts';
+$sql = 'SELECT * FROM contacts';
 $stmt = mysqli_stmt_init($conn);
 
 if(!mysqli_stmt_prepare($stmt, $sql))
@@ -19,11 +19,12 @@ else
 
 
   while($row = mysqli_fetch_assoc($result)) {
-    array_push($source, $row['contactId']);
-    array_push($source, $row['contactFirst']);
-    array_push($source, $row['contactLast']);
-    array_push($source, $row['contactAddress']);
-    array_push($source, $row['contactNotes']);
+    array_push($source, $row['contactsId']);
+    array_push($source, $row['contactsFirst']);
+    array_push($source, $row['contactsLast']);
+    array_push($source, $row['contactsAddress']);
+    array_push($source, $row['contactsNumber']);
+    array_push($source, $row['contactsPhoto']);
     array_push($final, $source);
     $source = array();
   }
