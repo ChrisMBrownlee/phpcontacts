@@ -8,9 +8,9 @@ $(document).ready(function () {
             var source = $.parseJSON(format);
             console.log(source);
 
-            $.each(source, function(index, value){
-              addContact(value);
-            });
+            //$.each(source, function(index, value){
+             // addContact(value);
+            //});
 
             // $("#listbox").jqxListBox(
             //   { source: source, width: '200px',
