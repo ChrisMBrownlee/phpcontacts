@@ -23,8 +23,7 @@ else
   while($row = mysqli_fetch_assoc($result)) {
    
     //echo "<input type="button">" . $row[contactsFirst] . " " . $row[contactsLast] . "</input>"
-    //echo "</body>"
-    //echo "</html>"
+    
     array_push($source, $row['contactsId']);
     array_push($source, $row['contactsFirst']);
     array_push($source, $row['contactsLast']);
@@ -34,6 +33,9 @@ else
     array_push($final, $source);
     $source = array();
   }
+
+  //echo "</body>"
+  //echo "</html>"
 
   // Print source string
   $json = json_encode($final);
