@@ -9,13 +9,6 @@
   <title></title>
   <link rel="stylesheet" href="style.css">
 
-  <script src="javascript/jquery-1.11.1.min.js" type="text/javascript"></script>
-  <script src="javascript/jquery-1.12.4.min.js" type="text/javascript"></script>
-
-  <script src="javascript/Listbox Widget/jqxcore.js" type="text/javascript"></script>
-  <script src="javascript/Listbox Widget/jqxbuttons.js" type="text/javascript"></script>
-  <script src="javascript/Listbox Widget/jqxlistbox.js" type="text/javascript"></script>
-  <script src="javascript/Listbox Widget/jqxscrollbar.js" type="text/javascript"></script>
 </head>
 <body>
   <header>
